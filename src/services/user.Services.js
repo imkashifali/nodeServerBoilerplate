@@ -1,0 +1,1 @@
+//access user model in models and calls the query and return user object to controller
