@@ -5,6 +5,8 @@ const Users = require("../models/user.Model");
 // @route   GET /user
 // @desc    user post route
 // @access  Public
+
+
 router.get("/", async (req, res) => {
   try {
     const user = await Users.find();
