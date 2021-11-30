@@ -3,6 +3,10 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 
 const userRoutes = require('./src/routes/user.Route');
+const productRoutes = require('./src/routes/product.routes');
+const userInfoRoutes = require('./src/routes/userInfo.Route')
+
+
 const app = express();
 
 app.use(express.json());
@@ -21,6 +25,10 @@ app.get('/', (req,res) => res.send('hello World'));
 
 //Use Routes
 app.use('/user',userRoutes);
+app.use('/product',productRoutes);
+app.use('/userInfo',userInfoRoutes);
+
+
 
 
 
